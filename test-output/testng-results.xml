@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="957" started-at="2020-08-09T06:01:04Z" finished-at="2020-08-09T06:01:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="957" started-at="2020-08-09T06:01:04Z" finished-at="2020-08-09T06:01:04Z">
+      <class name="com.Test_API.Car_Api">
+        <test-method status="PASS" signature="serversertup()[pri:0, instance:com.Test_API.Car_Api@1e67a849]" name="serversertup" is-config="true" duration-ms="1989" started-at="2020-08-09T06:01:02Z" finished-at="2020-08-09T06:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serversertup -->
+        <test-method status="PASS" signature="printBlueCar()[pri:1, instance:com.Test_API.Car_Api@1e67a849]" name="printBlueCar" duration-ms="801" started-at="2020-08-09T06:01:04Z" finished-at="2020-08-09T06:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printBlueCar -->
+        <test-method status="PASS" signature="lowestPriceOnly()[pri:2, instance:com.Test_API.Car_Api@1e67a849]" name="lowestPriceOnly" duration-ms="29" started-at="2020-08-09T06:01:04Z" finished-at="2020-08-09T06:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lowestPriceOnly -->
+        <test-method status="PASS" signature="lowestPriceAfterDiscount()[pri:3, instance:com.Test_API.Car_Api@1e67a849]" name="lowestPriceAfterDiscount" duration-ms="27" started-at="2020-08-09T06:01:04Z" finished-at="2020-08-09T06:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lowestPriceAfterDiscount -->
+        <test-method status="PASS" signature="highestRevenue()[pri:4, instance:com.Test_API.Car_Api@1e67a849]" name="highestRevenue" duration-ms="14" started-at="2020-08-09T06:01:04Z" finished-at="2020-08-09T06:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- highestRevenue -->
+      </class> <!-- com.Test_API.Car_Api -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

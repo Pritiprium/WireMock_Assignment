@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.Test_API.Car_Api">
+        <methods>
+          <include name="serversertup"/>
+          <include name="printBlueCar"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Test_API.Car_Api -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
