@@ -7,7 +7,6 @@
         <methods>
           <include name="serversertup"/>
           <include name="printBlueCar"/>
-          <include name="setup"/>
         </methods>
       </class> <!-- com.Test_API.Car_Api -->
     </classes>

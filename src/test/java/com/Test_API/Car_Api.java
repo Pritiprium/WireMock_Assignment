@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.model.Car;
@@ -18,13 +19,18 @@ public class Car_Api extends TestBase {
 		Cars_List carList = response.as(Cars_List.class);
 		System.out.println("Length of Car List>>  " + carList.getCars().length);
 		for (Car car : carList.getCars()) {
-			// System.out.println(car.getMake() + " " + car.getModel());
+			
+			String actual = (car.getMetadata().getColor());
+			System.out.println(actual);
+			System.out.println(car.getMake() + " " + car.getModel());
 			if (car.getMetadata().getColor().equalsIgnoreCase("Blue")) {
 				System.out.println("Blue Car Name is >>>  (" + car.getMake() + ") and Note is->>>  "
 						+ car.getMetadata().getNotes());
 				System.out.println();
 				System.out.println("Whole Elements of Blue Car is -> " + car.getMake() + " " + car);
+				Assert.assertEquals(actual, "Blue");
 			}
+			
 		}
 	}
 
