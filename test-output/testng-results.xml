@@ -2,31 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="677" started-at="2020-08-09T17:27:45Z" finished-at="2020-08-09T17:27:46Z">
+  <suite name="Default suite" duration-ms="4096" started-at="2020-08-13T15:38:16Z" finished-at="2020-08-13T15:38:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="677" started-at="2020-08-09T17:27:45Z" finished-at="2020-08-09T17:27:46Z">
+    <test name="Default test" duration-ms="4096" started-at="2020-08-13T15:38:16Z" finished-at="2020-08-13T15:38:20Z">
       <class name="com.Test_API.Car_Api">
-        <test-method status="PASS" signature="serversertup()[pri:0, instance:com.Test_API.Car_Api@1e67a849]" name="serversertup" is-config="true" duration-ms="2236" started-at="2020-08-09T17:27:43Z" finished-at="2020-08-09T17:27:45Z">
+        <test-method status="PASS" signature="serversertup()[pri:0, instance:com.Test_API.Car_Api@11dc3715]" name="serversertup" is-config="true" duration-ms="810" started-at="2020-08-13T15:38:15Z" finished-at="2020-08-13T15:38:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serversertup -->
-        <test-method status="PASS" signature="printBlueCar()[pri:1, instance:com.Test_API.Car_Api@1e67a849]" name="printBlueCar" duration-ms="537" started-at="2020-08-09T17:27:45Z" finished-at="2020-08-09T17:27:45Z">
+        <test-method status="PASS" signature="printBlueCar()[pri:1, instance:com.Test_API.Car_Api@11dc3715]" name="printBlueCar" duration-ms="3960" started-at="2020-08-13T15:38:16Z" finished-at="2020-08-13T15:38:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printBlueCar -->
-        <test-method status="PASS" signature="lowestPriceOnly()[pri:2, instance:com.Test_API.Car_Api@1e67a849]" name="lowestPriceOnly" duration-ms="33" started-at="2020-08-09T17:27:45Z" finished-at="2020-08-09T17:27:45Z">
+        <test-method status="PASS" signature="lowestPriceOnly()[pri:2, instance:com.Test_API.Car_Api@11dc3715]" name="lowestPriceOnly" duration-ms="26" started-at="2020-08-13T15:38:20Z" finished-at="2020-08-13T15:38:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lowestPriceOnly -->
-        <test-method status="PASS" signature="lowestPriceAfterDiscount()[pri:3, instance:com.Test_API.Car_Api@1e67a849]" name="lowestPriceAfterDiscount" duration-ms="22" started-at="2020-08-09T17:27:45Z" finished-at="2020-08-09T17:27:46Z">
+        <test-method status="PASS" signature="lowestPriceAfterDiscount()[pri:3, instance:com.Test_API.Car_Api@11dc3715]" name="lowestPriceAfterDiscount" duration-ms="17" started-at="2020-08-13T15:38:20Z" finished-at="2020-08-13T15:38:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lowestPriceAfterDiscount -->
-        <test-method status="PASS" signature="highestRevenue()[pri:4, instance:com.Test_API.Car_Api@1e67a849]" name="highestRevenue" duration-ms="41" started-at="2020-08-09T17:27:46Z" finished-at="2020-08-09T17:27:46Z">
+        <test-method status="PASS" signature="highestRevenue()[pri:4, instance:com.Test_API.Car_Api@11dc3715]" name="highestRevenue" duration-ms="18" started-at="2020-08-13T15:38:20Z" finished-at="2020-08-13T15:38:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highestRevenue -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.Test_API.Car_Api@11dc3715]" name="teardown" is-config="true" duration-ms="18" started-at="2020-08-13T15:38:20Z" finished-at="2020-08-13T15:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- com.Test_API.Car_Api -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

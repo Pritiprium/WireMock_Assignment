@@ -9,7 +9,7 @@ public class Car {
 	private Metadata metadata;
 	private Perdayrent perdayrent;
 	private Metrics metrics;	
-
+	
 	public String getMake() {
 		return make;
 	}

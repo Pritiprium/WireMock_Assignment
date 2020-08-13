@@ -13,13 +13,28 @@ import org.testng.annotations.Test;
 import com.model.Car;
 import com.model.Cars_List;
 
-public class Car_Api extends TestBase {
+import io.restassured.RestAssured;
+import io.restassured.parsing.Parser;
+import static org.hamcrest.MatcherAssert.assertThat; 
+import static org.hamcrest.Matchers.*;
+public class Car_Api extends Stubing_Schema {
+	// java -jar wiremock-jre8-standalone-2.27.0.jar --port 8081
+
 	@Test(priority = 1)
 	public void printBlueCar() {
+		cars_stubsetup();
+		String hostName = "http://localhost:9090";
+		String URI = "/get_cars";
+		String URL = hostName + URI;
+		RestAssured.baseURI = URL;
+		RestAssured.defaultParser = Parser.JSON;
+		response = RestAssured.given().contentType("application/json").get();
+		System.out.println(response.asString());
+		System.out.println(response.statusCode());
 		Cars_List carList = response.as(Cars_List.class);
 		System.out.println("Length of Car List>>  " + carList.getCars().length);
 		for (Car car : carList.getCars()) {
-			
+
 			String actual = (car.getMetadata().getColor());
 			System.out.println(actual);
 			System.out.println(car.getMake() + " " + car.getModel());
@@ -27,10 +42,10 @@ public class Car_Api extends TestBase {
 				System.out.println("Blue Car Name is >>>  (" + car.getMake() + ") and Note is->>>  "
 						+ car.getMetadata().getNotes());
 				System.out.println();
-				System.out.println("Whole Elements of Blue Car is -> " + car.getMake() + " " + car);
+				System.out.println("Whole Property of Blue Car is -> " + car.getMake() + " " + car);
 				Assert.assertEquals(actual, "Blue");
 			}
-			
+
 		}
 	}
 

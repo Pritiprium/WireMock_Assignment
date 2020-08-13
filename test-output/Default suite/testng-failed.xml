@@ -6,6 +6,7 @@
       <class name="com.Test_API.Car_Api">
         <methods>
           <include name="serversertup"/>
+          <include name="teardown"/>
           <include name="printBlueCar"/>
         </methods>
       </class> <!-- com.Test_API.Car_Api -->
